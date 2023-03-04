@@ -36,6 +36,6 @@ Options:
 
 # Cite 
 Please freely use this script but don't forget to cite this page, thank you!
-Please cite :
+Please cite:
 > https://github.com/GaoyangLuo/ppr_practice
 
