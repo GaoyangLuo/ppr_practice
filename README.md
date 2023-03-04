@@ -20,8 +20,9 @@ Then you can use the script ppr_practice.py to generate your simulation projecti
 Example usage:
 
 ```sh
-python ppr.py -i <input> -o <output> -l <left range> -r <right range> -t <iterate_times>
+python ppr.py -i example.txt -o out.txt -l 0.1 -r 1.0 -t 100
 ```
+
 ### Notion
 Here, the each value refers to:
 ```sh
