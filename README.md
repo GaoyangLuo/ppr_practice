@@ -27,3 +27,8 @@ Here, the each value refers to:
     -t <iterate_times> #set how many iterations you want to run.
 ```
 
+# Cite 
+Please freely use this script but don't forget to cite this page, thank you!
+Please cite :
+> https://github.com/GaoyangLuo/ppr_practice
+
