@@ -24,7 +24,7 @@ python ppr.py -i example.txt -o out.txt -l 0.1 -r 1.0 -t 100
 ```
 
 ### Notion
-Here, the each value refers to:
+Here, each value refers to:
 ```sh
 Options:
     -i, --input First column should contain indexes, the second is x, the third is y, header should be included.
