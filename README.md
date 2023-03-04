@@ -17,4 +17,13 @@ Then you can use the script ppr_practice.py to generate your simulation projecti
 ```sh
 python ppr.py -i <input> -o <output> -l <left range> -r <right range> -t <iterate_times>
 ```
+### Notion
+```sh
+Here, the each value refers to:
+    -i <input> #First column should contain indexes, the second is x, the third is y, header should be included.
+    -o <output> #the output path you want to store the projection values
+    -l <left range> #set the start of your simulation x range
+    -r <right range> #set the end of your simulation x range
+    -t <iterate_times> #set how many iterations you want to run.
+```
 
