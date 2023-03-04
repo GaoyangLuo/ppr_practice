@@ -3,7 +3,7 @@ This script can help you to easily use Project-persuit regression.
 
 
 ## How to use
-First you should download indipendence and the python version should > 3.6
+First you should download indipendence and the python version should python >= 3.6
 ### Indipendence 
 ```sh
 $ pip install numpy, scipy, scikit-learn, matplotlib, projection-pursuit
