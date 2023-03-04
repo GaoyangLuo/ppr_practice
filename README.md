@@ -1,5 +1,5 @@
 # ppr_practice
-This script can help you to easily use Project-persuit regression.
+This script can help you to easily use projection-pursuit regression.
 
 
 ## How to use
