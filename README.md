@@ -12,7 +12,7 @@ First you should download indipendence and the python version should python >= 3
 Then, clone this directory to the local.
 ```sh
 git clone https://github.com/GaoyangLuo/ppr_practice.git
-cd  ppr_practice
+cd ppr_practice
 ```
 
 Then you can use the script ppr_practice.py to generate your simulation projection values.
