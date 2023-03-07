@@ -19,10 +19,16 @@ Then you can use the script ppr_practice.py to generate your simulation projecti
 
 Example usage:
 
+If there is only on x, simulation works:
+
 ```sh
 python ppr_practice.py -i example.txt -o out.txt -l 0.1 -r 1.0 -t 100
 ```
 
+If there is more than on x, randomized simulaiton values are not able to generate. The output only contains the projection values of your original input x.
+```sh
+python ppr_practice.py -i example.txt -o out.txt
+```
 ### Notion
 Here, each value refers to:
 ```sh
