@@ -30,7 +30,7 @@ Options:
     -i, --input First column should contain indexes, the second is x, the third is y, header should be included.
     -o, --output the output path you want to store the projection values
     -l, --lrange set the start of your simulation x range
-    -r, --rrange set the end of your simulation x range
+    -r, --rrange set the end of your simulation y range
     -t, --times set how many iterations you want to run.
 ```
 
