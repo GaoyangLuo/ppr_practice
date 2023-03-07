@@ -22,14 +22,17 @@ parser.add_argument('-i', '--input', required=True,
 parser.add_argument('-o', '--output', required=True,
     dest='output', 
     help='Output files for this program (relative abundance of ARGs tsv file)')
-parser.add_argument('-l', '--lrange', required=True,
+parser.add_argument('-l', '--lrange', required=False,
     dest='lrange', 
+    default=0.01,
     help='start range')
-parser.add_argument('-r', '--rrange', required=True,
+parser.add_argument('-r', '--rrange', required=False,
     dest='rrange', 
+    default=0.1,
     help='End range')
-parser.add_argument('-t', '--times', required=True,
+parser.add_argument('-t', '--times', required=False,
     dest='times', 
+    default=100,
     help='How many times you want to iterate')
 
 
@@ -82,15 +85,30 @@ class ppr_cal(object):
         estimator.fit(value_x_array,value_y)
 
         #predict
-        simu_x=self.randFloatGenerate()
-        predict=estimator.predict(simu_x)
-
-        predic_df=pd.DataFrame(predict)
-
-        print("The simulated projection values are:\n{}".format(predic_df[0]))
+        if len(value_x_array.shape) ==1:
+            simu_x=self.randFloatGenerate()
+            predict=estimator.predict(simu_x)
+            predict_df=pd.DataFrame(predict)
+            
+            print("The simulated projection values are:\n{}".format(predict_df[0]))
+            
+        else:
+            predict_df=None
+            pass
         
-        return predic_df
+        predict_vali=estimator.predict(value_x_array)
+        predict_vali_df=pd.DataFrame(predict_vali)
+        
+        if len(value_x_array.shape) >1:
+            predict_vali_final=pd.concat([predict_df,predict_vali_df],axis=1)
+            
+            print("The validated projection values are:\n{}".format(predict_vali_df[0]))
+        else:
+            predict_vali_final=predict_vali_df
+            
+        return predict_vali_final
 
+        
 if __name__ == "__main__":
     output=output
     a=ppr_cal(lrange=lrange,rrange=rrange,times=times,input=input) #"dsr_crossVali/biodMP.txt"

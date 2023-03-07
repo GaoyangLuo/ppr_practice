@@ -15,7 +15,7 @@ git clone https://github.com/GaoyangLuo/ppr_practice.git
 cd ppr_practice
 ```
 
-Then you can use the script ppr_practice.py to generate your simulation projection values.
+Then you can use the script ppr_practice.py to generate your simulation projection values. Note that this script used simulated x that generated from the real values of your scripts. And if you want to use higer dimensions of Xi, simulation may not work. The output can only generate a set of validated y values by the input of the original X, and by using the validated y values, the projection values of x, you can draw a linear regression by predict true y with the projections of y.
 
 Example usage:
 
